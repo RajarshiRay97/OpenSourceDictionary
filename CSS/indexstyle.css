@@ -1,0 +1,333 @@
+/* Font - Abhaya Libre */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+/* Font - Aleo */
+@import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+
+
+/* Utility properties */
+ul{
+    margin-bottom: 0;
+}
+
+
+/* Navbar */
+/* logo */
+#logoDiv{
+    margin-right: 1rem;
+}
+#logoWithName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoWithName img{
+    width: 60px;
+    height: 60px;
+    margin-right: 0.5rem;
+}
+
+#navbarNavDropdown{
+    justify-content: space-between;
+}
+/* languageList */
+#languageList{
+    min-width: 0rem;
+}
+
+/* dropdown-item in language list */
+.dropdown-item{
+width: 100%;
+padding: .25rem 0.7rem;
+}
+
+
+/* querySection */
+#querySection{
+    /* border: 2px solid black; */
+    height: 26rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* for the background image */
+#querySection::before{
+    content: "";
+    background: url("https://assets.answersingenesis.org/img/cms/content/contentnode/og_image/merriam-webster-adds-non-binary-pronoun-they-dictionary.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    opacity: 0.7;
+}
+
+
+/* mainHeading */
+#mainHeading{
+    padding: 0.5rem 2rem;
+    background-color: black;
+}
+#mainHeading h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Abhaya Libre', serif;
+    color: rgb(241 188 188);
+    margin-bottom: 0;
+}
+
+/* quote */
+#quote{
+    background-color: black;
+    margin: 1.5rem 0;
+    padding: 0.5rem 2rem;
+}
+#quote h4{
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+    margin-bottom: 0;
+}
+
+/* Div for input word and search */
+#inputWordDiv{
+    padding: 0 10vw;
+    margin-top: 2rem;
+}
+#wordInput{
+    border: none;
+    padding: .6rem .75rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 2px 7px 0px #383838;
+}
+/* search button */
+#button-addon2{
+    background-color: white;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: gray;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 7px 0px #383838;
+}
+#button-addon2:hover{
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+/* Result Section */
+#resultSection{
+    padding: 0.75rem;
+}
+
+/* Div for audio and word name and pronounciation */
+/* <!-- Audio and pronounciation --> */
+#phoneticsDiv{
+    margin: 0.5rem;
+    display: none;
+    overflow-x: auto;
+}
+
+/* audio button */
+#audioBtn{
+    height: 50%;
+    margin: 0.5rem;
+    outline: none;
+    border: 1px solid #dadce0;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 0.1875rem 0.5625rem;
+    color: #3f3fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+#audioBtn:hover{
+    font-size: 1.6rem;
+    padding: 0.125rem 0.5125rem;
+    background-color: #f1f6ff;
+}
+
+/* Word name and pronounciation */
+#WordPronounciation{
+    margin: 0.4rem 0;
+}
+#WordPronounciation h1{
+    font-size: 2.3rem;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-family: 'Aleo', serif;
+}
+#WordPronounciation p{
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+/* meaning sub section */
+#meaningSubSection{
+    margin: 1rem 0.5rem;
+}
+
+/* definations div */
+.accordion-body{
+    padding-left: 2rem;
+    text-align: justify;
+}
+
+/* example */
+.exmclass{
+    line-height: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Synonyms of a word */
+.synonymClass{
+    margin-right: 0.4rem;
+    color: #188038;
+    font-weight: 600;
+}
+
+
+/* typewriter div */
+#msgWhenEmpty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Aleo', serif;
+}
+
+.typewriter {
+    margin-right: 0.5rem;
+	display: inline-block;
+}
+
+/* typewriter-text */
+.typewriter-text1 {
+    display: inline-block;
+  	overflow: hidden;
+    letter-spacing: 0.3rem;
+ 	animation: typing1 4s steps(24, end), blink .33s step-end infinite;
+    white-space: nowrap;
+    /* border-right: 3px solid black; */
+    box-sizing: border-box;
+}
+.typewriter-text2 {
+    display: inline-block;
+    visibility: hidden;
+  	overflow: hidden;
+    letter-spacing: 0.3rem;
+ 	animation: typing2 2s steps(12, end) 4s, visibleMsg 2s 4s infinite,blink .75s step-end infinite;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    box-sizing: border-box;
+}
+
+/* footer */
+footer{
+    background-color: #794848;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Aleo', serif;
+    padding: 5px 0;
+}
+
+/* type writting Animation */
+@keyframes typing1 {
+    0% { 
+        width: 0% ;
+        border-right: 3px solid black;
+    }
+    98% { 
+        width: 98% ;
+        border-right: 3px solid black;
+    }
+    100% { 
+        width: 100%;
+        border-right: none;
+    }
+}
+@keyframes typing2 {
+    0% { 
+        width: 0% ;
+    }
+    100% { 
+        width: 100%;
+    }
+}
+
+@keyframes visibleMsg{
+    from{
+        visibility: visible;
+    }
+    to{
+        visibility: visible;
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent;
+    }
+    50% { 
+        border-color: black; 
+    }
+}
+
+
+/* When the screen width is below 679px */
+@media only screen and (max-width: 678px){
+    #msgWhenEmpty{
+        flex-direction: column;
+    }
+    .typewriter {
+        margin-right: 0;
+    }
+}
+
+/* When the screen width is below 411px */
+@media only screen and (max-width: 410px){
+    #innerNav{
+        flex-direction: column;
+    }
+    #logoDiv{
+        margin-right: 0rem;
+    }
+    #logoWithName{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+    #querySection{
+        height: 20rem;
+    }
+    #mainHeading{
+        padding: 0.5rem 1rem;
+    }
+    #quote{
+        padding: 0.5rem 1rem;
+    }
+    #mainHeading h1{
+        font-size: 2rem;
+    }
+    #quote h4{
+        font-size: 1rem;
+    }
+    #WordPronounciation h1{
+        font-size: 1.7rem;
+    }
+    .typewriter-text1 {
+        letter-spacing: 0;
+        font-size: 1.5rem;
+    }
+    .typewriter-text2 {
+        letter-spacing: 0;
+        font-size: 1.5rem;
+    }
+}
